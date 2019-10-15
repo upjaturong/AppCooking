@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#3953C2F3"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/parent_layout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/Linearbutton">
+
+        <ImageView
+            android:id="@+id/foodImg"
+            android:layout_width="161dp"
+            android:layout_height="133dp"
+            android:background="@mipmap/ic_launcher_round"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_marginTop="6dp"
+            android:id="@+id/namefoods"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlueDark"
+            android:text="@string/app_name"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="end"
+           android:orientation="horizontal">
+           <TextView
+               android:gravity="right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="14sp"
+               android:textColor="@color/colorBlueDark"
+               android:text="฿"
+               tools:ignore="RtlHardcoded" />
+           <TextView
+               android:gravity="left"
+               android:id="@+id/promo_price"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:textColor="@color/colorBlueDark"
+               android:text="20 Baht"
+               android:layout_marginEnd="10dp"
+               tools:ignore="RtlHardcoded" />
+
+       </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

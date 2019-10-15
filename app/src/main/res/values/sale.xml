@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="greentea"> 30  </string>
+    <string name="pangyen"> 80  </string>
+    <string name="lamonteas"> 40  </string>
+    <string name="blacktea"> 30  </string>
+    <string name="ohliang"> 30  </string>
+    <string name="milkgreentea"> 30  </string>
+    <string name="pangbanana"> 25 </string>
+</resources>

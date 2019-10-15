@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+  <ImageView
+      android:layout_centerHorizontal="true"
+      android:scaleType="fitXY"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:src="@drawable/foodbg4"/>
+
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/home_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="70dp"
+           android:fontFamily="serif"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/colorBlueDark"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="text"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:textColor="@color/colorBlueDark"
+            android:text="Login"
+            android:textSize="20sp" />
+        <TextView
+            android:fontFamily="serif"
+            android:textColor="@color/colorBlueDark"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Foget Email/Password"
+            />
+        <TextView
+            android:fontFamily="serif"
+            android:id="@+id/create_account"
+            android:textColor="@color/colorBlueDark"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Create your Account"
+            android:layout_marginBottom="30dp"
+            />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/registration_layout"
+        layout="@layout/user_registration"
+        android:visibility="gone" />
+
+    </RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/write"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:background="#FFFFFF"
+                android:textFontWeight="0"
+                android:textColor="@color/red"
+                android:layout_width="match_parent"
+                android:paddingLeft="16dp"
+                android:layout_height="30dp"
+                android:text="Promotion">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/promotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:textSize="18sp"
+                android:textFontWeight="40"
+                android:background="#FFFFFF"
+                android:textColor="@color/colorBlueDark"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="16dp"
+                android:text="TopDrink">
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Popdrink">
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_marginTop="4dp"
+                android:textSize="18sp"
+                android:textFontWeight="40"
+                android:background="#FFFFFF"
+                android:textColor="@color/colorBlueDark"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingStart="16dp"
+                android:text="TopMenu"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Popsweet">
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_marginTop="4dp"
+                android:textSize="18sp"
+                android:textFontWeight="40"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/colorBlueDark"
+                android:paddingStart="16dp"
+                android:text="Menu"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Menu">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

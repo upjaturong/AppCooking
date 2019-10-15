@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pro_greentea"> 25  </string>
+    <string name="pro_pangyen"> 69  </string>
+    <string name="pro_lamonteas"> 30  </string>
+    <string name="pro_blacktea"> 25  </string>
+    <string name="pro_ohliang"> 25  </string>
+    <string name="pro_milkgreentea"> 25  </string>
+</resources>
