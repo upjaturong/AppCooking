@@ -10,7 +10,7 @@ class TrackingOrder :AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.trackorder)
         gotomenu.setOnClickListener {
-            var btngotoMemu = Intent(this, MainActivity::class.java)
+            val btngotoMemu = Intent(this, MainActivity::class.java)
             startActivity(btngotoMemu)
         }
     }

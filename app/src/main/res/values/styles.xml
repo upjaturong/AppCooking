@@ -14,7 +14,6 @@
         <item name="colorAccent">@color/colorBlueDark</item>
     </style>
     <style name="AppTheme3" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:fontFamily">serif</item>
         <item name="colorPrimary">@color/sky</item>
         <item name="colorPrimaryDark">@color/sky</item>
         <item name="colorAccent">@color/colorBlueDark</item>

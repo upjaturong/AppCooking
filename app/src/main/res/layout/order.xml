@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -27,8 +28,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
             android:layout_height="2dp"
-            android:background="@color/colorBlueDark"
-            />
+            android:background="@color/colorBlueDark" />
 
         <LinearLayout
             android:layout_marginTop="10dp"
@@ -63,23 +63,35 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/name_order"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:paddingLeft="70dp"
+                android:paddingStart="70dp"
                 android:text="Green Tea"
-                android:textSize="16sp" />
-
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:textSize="16sp"
-                android:gravity="center"
+                android:gravity="right"
                 android:fontFamily="serif"
                 android:paddingLeft="30dp"
-                android:text="฿ 30" />
+                android:text="฿" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_marginStart="5dp"
+                android:fontFamily="serif"
+                android:text="30" />
         </LinearLayout>
 
         <LinearLayout
@@ -94,18 +106,19 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:fontFamily="serif"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:text="Count" />
 
             <TextView
+                android:id="@+id/count"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="0"
                 android:paddingLeft="30dp"
                 android:fontFamily="serif"
-                android:textSize="16dp"
-                android:text="1" />
+                android:textSize="16sp" />
         </LinearLayout>
         <ImageView
             android:layout_width="match_parent"
@@ -127,18 +140,29 @@
                 android:layout_weight="1"
                 android:paddingLeft="60dp"
                 android:fontFamily="serif"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:text="Total" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="right"
                 android:paddingLeft="30dp"
                 android:fontFamily="serif"
-                android:textSize="25dp"
-                android:text="฿ 30" />
+                android:textSize="25sp"
+                android:text="฿"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:fontFamily="serif"
+                android:textSize="25sp"
+                android:layout_marginStart="5dp"
+                android:text="30" />
         </LinearLayout>
     </LinearLayout>
     <Button
