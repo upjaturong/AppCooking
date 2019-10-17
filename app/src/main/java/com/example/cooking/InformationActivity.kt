@@ -3,17 +3,17 @@ package com.example.cooking
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.text.Html
-import android.view.View
-import android.widget.EditText
+import android.util.Log
 import android.widget.TextView
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_information.*
 
+const val TAG = "InformationActivity"
 class InformationActivity :AppCompatActivity(){
     var textView: TextView? = null
     var imageView: ImageView? = null
@@ -43,9 +43,12 @@ class InformationActivity :AppCompatActivity(){
         imageView!!.setImageResource(intent.getIntExtra("IMAGE",0))
 
         Confirm.setOnClickListener {
-            mDatabase.child(uid).child("Food").setValue(textView!!.text)
-            mDatabase.child(uid).child("Price").setValue(textfood!!.text)
-            mDatabase.child(uid).child("Count").setValue(1)
+            val employeeId = mDatabase.push().key
+            val employee = Employees(
+                employeeId.toString(), textView!!.text as String,
+                textfood!!.text as String
+            )
+            mDatabase.child(uid).child(employeeId!!).setValue(employee)
             startActivity(Intent(this, TrackingOrder::class.java))
         }
     }

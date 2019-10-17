@@ -3,22 +3,79 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="12"
-        android:background="@drawable/order">
+        android:orientation="vertical"
+        android:layout_weight="10">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#224889"
+            android:text="@string/app_name"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/step_1"
+                android:layout_width="20dp"
+                android:background="@drawable/bg2"
+                android:layout_height="20dp"/>
 
-    </ImageView>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/sky"/>
+            <Button
+                android:id="@+id/step_2"
+                android:layout_width="20dp"
+                android:background="@drawable/bg2"
+                android:layout_height="20dp"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/sky"/>
+            <Button
+                android:id="@+id/step_3"
+                android:layout_width="20dp"
+                android:background="@drawable/bg2"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/img_step"
+            android:layout_width="wrap_content"
+            android:background="@drawable/step1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
    <Button
        android:layout_gravity="center"
        android:layout_width="200dp"
        android:layout_height="0dp"
-       android:layout_weight="1"
+       android:layout_weight="0.7"
        android:fontFamily="serif"
-       android:textSize="25dp"
+       android:textSize="20dp"
        android:textColor="@color/write"
        android:text="go to menu"
        android:background="@color/colorblue"

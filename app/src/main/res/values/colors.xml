@@ -10,6 +10,7 @@
     <color name="colorBlueDark">#0066CC</color>
     <color name="BlackDark">#000000</color>
     <color name="red">#FF0000</color>
+    <color name="gray">#999999</color>
     <color name="green">#00FF66</color>
     <color name="sky">#EB53C2F3</color>
 
