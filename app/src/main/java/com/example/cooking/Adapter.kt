@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_information.view.*
 import kotlinx.android.synthetic.main.model.view.*
 import android.content.Context as Context1
 

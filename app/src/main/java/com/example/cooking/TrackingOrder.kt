@@ -7,12 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.trackorder.*
 import java.util.*
 import java.util.concurrent.TimeUnit
-import kotlin.concurrent.timer
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.os.Handler
-import android.view.View
 
 
 class TrackingOrder :AppCompatActivity(){
